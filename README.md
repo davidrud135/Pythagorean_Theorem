@@ -4,7 +4,7 @@
 
 **_c<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup>_**
 
-![](https://github.com/davidrud135/Pythagorean_Theorem/blob/master/rectangle.png)
+![](https://github.com/davidrud135/Pythagorean_Theorem/blob/master/rectangular_triangle.png)
 
 Hello everybody!
 
