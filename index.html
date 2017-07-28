@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>The Pythagorean Theorem Calculator</title>
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>The Pythagorean Theorem Calculator</h1>
+
+	<img src="rectangular_triangle.png" alt="">
+
+	<div class="form_container">
+
+		<form onsubmit="calculate(); return false">
+			<p>
+				<label for="leg1">a:</label>
+				<input type="number" id="leg1" placeholder="First leg">
+			</p>
+
+			<p>
+				<label for="leg2">b:</label>
+				<input type="number" id="leg2" placeholder="Second leg">
+			</p>
+
+			<p>
+				<label for="hypotenuse">c:</label>
+				<input type="number" id="hypotenuse" placeholder="Hypotenuse">
+			</p>
+
+			<input type="submit" value="Calculate">
+			<input type="button" value="Clear" onclick="clearFields()">
+		</form>
+
+	</div>
+</body>
+</html>
