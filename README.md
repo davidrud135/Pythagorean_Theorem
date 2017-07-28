@@ -4,7 +4,7 @@
 
 **_c<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup>_**
 
-![](https://github.com/davidrud135/Pythagorean_Theorem/blob/develop/rectangle.png)
+![](https://github.com/davidrud135/Pythagorean_Theorem/blob/master/rectangle.png)
 
 Hello everybody!
 
@@ -27,6 +27,6 @@ Then go to cloned repository and open index.html file.
  ### 2. Download ZIP archive
 Do as below:
 
-![](https://github.com/davidrud135/Pythagorean_Theorem/blob/develop/ZIP.png)
+![](https://github.com/davidrud135/Pythagorean_Theorem/blob/master/ZIP.png)
 
 Later unpack archive and open index.html file.
