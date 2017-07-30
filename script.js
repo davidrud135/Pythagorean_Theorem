@@ -1,10 +1,14 @@
 function calculate() {
-	var leg1, leg2, hypo;
+	var leg1, leg2, hypo, firstCondition, secondCondition, thirdCondition;
 	leg1 = parseInt(document.getElementById('leg1').value.trim() );
 	leg2 = parseInt(document.getElementById('leg2').value.trim() );
 	hypo = parseInt(document.getElementById('hypotenuse').value.trim() ); 
 
-	if ( ( isNaN(hypo) && isNaN(leg1) ) || ( isNaN(hypo) && isNaN(leg2) ) || ( isNaN(leg1) && isNaN(leg2) )) {
+	firstCondition = isNaN(leg1) && isNaN(leg2);
+	secondCondition = isNaN(hypo) && isNaN(leg1);
+	thirdCondition = isNaN(hypo) && isNaN(leg2);
+
+	if (firstCondition || secondCondition  || thirdCondition) {
 		alert('At least 2 fiels should be filled up!');
 	} else if ( isNaN(leg1) ) {
 
