@@ -19,7 +19,7 @@ label {
 	margin: 20px 450px 0 0;
 	box-sizing: border-box;
 }
-input[type="number"] {
+.field {
 	width: 350px;
 	height: 35px;
 	box-sizing: border-box;
@@ -29,9 +29,12 @@ input[type="number"] {
     border-radius: 5px;
     -webkit-transition: all 0.30s ease-in-out;
     -moz-transition: all 0.30s ease-in-out;
-    outline: none;  
+    outline: none;
+    font-weight: normal;
+    color: #000;
+
 }
-input[type="number"]:focus {
+.field:focus {
 	box-shadow: 0 0 8px #88D5E9;
     border: 1px solid #88D5E9;
 }
@@ -68,5 +71,8 @@ input[type="submit"]:hover, input[type="button"]:hover {
 	.form_container {
 		margin-right: 250px;
 	}
-	
+}
+.highlighted_result {
+	color: blue;
+	font-weight: bold;
 }
