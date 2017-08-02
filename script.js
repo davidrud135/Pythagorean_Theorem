@@ -7,15 +7,15 @@ function calculateThirdSide() {
 	checkForTwoEmptyFields(leg1, leg2, hypo); 
 
 	switch(true) {
-		case isItNaN(leg1):
+		case isItEmpty(leg1):
 			findLeg1(leg2, hypo);
 			highlightResultById('leg1');
 			break;
-		case isItNaN(leg2):
+		case isItEmpty(leg2):
 			findLeg2(leg1, hypo);
 			highlightResultById('leg2');
 			break;
-		case isItNaN(hypo):
+		case isItEmpty(hypo):
 			findHypo(leg1, leg2);
 			highlightResultById('hypotenuse');
 			break;
@@ -33,9 +33,9 @@ function clearAllFields() {
 
 function checkForTwoEmptyFields(leg1, leg2, hypo) {
 	switch(true) {
-		case isItNaN(leg1) && isItNaN(leg2):
-		case isItNaN(leg1) && isItNaN(hypo):
-		case isItNaN(leg2) && isItNaN(hypo):
+		case isItEmpty(leg1) && isItEmpty(leg2):
+		case isItEmpty(leg1) && isItEmpty(hypo):
+		case isItEmpty(leg2) && isItEmpty(hypo):
 			alert('At least two fields should be filled up!');
 			break;
 	}
@@ -83,8 +83,8 @@ function getFieldDataById(id) {
 	return parseInt(document.getElementById(id).value.trim() );
 }
 
-function isItNaN(item) {
-	return isNaN(item);
+function isItEmpty(field) {
+	return isNaN(field);
 }
 
 function toSquare(x) {
