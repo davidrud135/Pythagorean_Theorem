@@ -10,10 +10,6 @@ function calculateThirdSide() {
 		case isItEmpty(leg1) || isItEmpty(leg2):
 			findLeg1OrLeg2(leg1, leg2, hypo);
 			break;
-		// case isItEmpty(leg2):
-		// 	findLeg2(leg1, hypo);
-		// 	highlightResultById('leg2');
-		// 	break;
 		case isItEmpty(hypo):
 			findHypo(leg1, leg2);
 			highlightResultById('hypotenuse');
@@ -39,28 +35,6 @@ function checkForTwoEmptyFields(leg1, leg2, hypo) {
 			break;
 	}
 }
-
-// function findLeg1(leg2, hypo) {
-// 	if (hypo <= leg2) {
-// 		alert('Value of \'c\' should be greater than \'a\' and \'b\'!');
-// 	} else {
-// 		leg2 = toSquare(leg2);
-// 		hypo = toSquare(hypo);
-// 		leg1 = Math.sqrt(hypo - leg2);
-// 		document.getElementById('leg1').value = leg1.toFixed(2);
-// 	}
-// }
-
-// function findLeg2(leg1, hypo) {
-// 	if (hypo <= leg1) {
-// 		alert('Value of \'c\' should be greater than \'a\' and \'b\'!');
-// 	} else {
-// 		leg1 = toSquare(leg1);
-// 		hypo = toSquare(hypo);
-// 		leg2 = Math.sqrt(hypo - leg1);
-// 		document.getElementById('leg2').value = leg2.toFixed(2);
-// 	}
-// }
 
 function findLeg1OrLeg2(leg1, leg2, hypo) {
 	switch(true) {
