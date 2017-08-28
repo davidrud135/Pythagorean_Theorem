@@ -4,9 +4,8 @@
 	<meta charset="UTF-8">
 	<title>The Pythagorean Theorem Calculator</title>
 	<script src="js/jquery-3.2.1.js"></script>
-	<script src="js/allReadyFunctions.js"></script>
-	<script src="js/clearFieldsFunction.js"></script>
-	<script src="js/mainFunction.js"></script>
+<!--<script src="js/allReadyFunctions.js"></script>
+	<script src="js/clearFieldsFunction.js"></script> -->
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -16,7 +15,7 @@
 
 	<div class="form_container">
 
-		<form onsubmit="calculateThirdSide(); return false">
+		<form>
 			<p>
 				<label for="leg1">a:</label>
 				<input type="number" id="leg1" placeholder="First leg" class="field">
@@ -33,9 +32,9 @@
 			</p>
 
 			<input type="submit" value="Calculate">
-			<input type="button" value="Clear" onclick="clearAllFields()">
+			<input type="button" value="Clear">
 		</form>
-
 	</div>
+	<script src="js/mainFunction.js"></script>
 </body>
 </html>
