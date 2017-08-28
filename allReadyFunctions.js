@@ -1,5 +1,5 @@
 function getFieldDataById(id) {
-	return parseInt(document.getElementById(id).value.trim() );
+	return parseInt($('#' + id).val().trim() );
 }
 
 function checkForTwoEmptyFields(leg1, leg2, hypo) {
@@ -31,12 +31,13 @@ function findHypo(leg1, leg2) {
 }
 
 function bringOutTheResult(fieldId, result) {
-    document.getElementById(fieldId).value = result.toFixed(2);
+    $('#' + fieldId).val(function() {
+    	return result.toFixed(2);
+    });
 }
 
 function highlightResultById(id) {
-	var resultField = document.getElementById(id);
-	resultField.classList.add('highlighted_result');
+	$('#' + id).addClass('highlighted_result');
 }
 
 function toSquare(x) {
@@ -44,5 +45,7 @@ function toSquare(x) {
 }
 
 function clearFieldDataById(id) {
-	document.getElementById(id).value = '';
+	$('#' + id).val(function() {
+		return '';
+	});
 }
