@@ -1,6 +1,5 @@
 function clearAllFields() {
-    var resultField = document.querySelector('.highlighted_result');
-    resultField.className = 'field';
+    $('.highlighted_result').removeClass('highlighted_result');
 
     clearFieldDataById('leg1');
     clearFieldDataById('leg2');
